@@ -1,0 +1,76 @@
+.contact-brand{
+    grid-area: contactbrand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 1rem;
+}
+.contacts{
+    grid-area: contacts;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    gap: 0.8rem;
+}
+.current-user {
+    grid-area: current-user;
+    background-color: #0d0d30;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 2rem;
+         }   
+.usersarea{
+ display: grid;
+ overflow: hidden;
+grid-template-rows: 10% 75% 15%;
+grid-template-areas: 
+"contactbrand"
+"contacts"
+"current-user";
+}
+
+.contact-brand img {
+    height: 2rem;
+  }
+  
+.contact-brand h3 {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .contacts::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  .contacts::-webkit-scrollbar-thumb {
+      background-color: #ffffff39;
+      width: 0.1rem;
+      border-radius: 1rem;
+    }
+ .contact{
+        background-color: #ffffff34;
+        min-height: 5rem;
+        cursor: pointer;
+        width: 90%;
+        border-radius: 0.2rem;
+        padding: 0.4rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+    }
+    .avatar 
+        img {
+          height: 3rem;
+        }
+      
+      .username 
+        h3 {
+          color: white;
+        }
+        .selected {
+            background-color: #9a86f3;
+          }
+ 
