@@ -1,4 +1,4 @@
-export const host= 'http://localhost:3030';
+export const host= 'https://buddy-chat.onrender.com';
 export const registrationApi= `${host}/api/auth/register`;
 export const loginApi=`${host}/api/auth/login`
 export const setavatarApi=`${host}/api/auth/setavatar`;
