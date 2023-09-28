@@ -18,7 +18,7 @@ function Chat(props) {
         const usertoken = {
             token: window.localStorage.getItem("chattoken")
         }
-           axios.post('http://localhost:3030/api/auth/verifylogin', usertoken)
+           axios.post('https://buddy-chat.onrender.com/api/auth/verifylogin', usertoken)
             .then((res) => {
                 const { data } = res
                 setcurrentuser(data)
