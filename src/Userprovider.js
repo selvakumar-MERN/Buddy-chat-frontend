@@ -13,7 +13,7 @@ const UserProvider = ({children})=>{
        
         }
         
-          await axios.post('http://localhost:3030/api/auth/verifylogin', usertoken)
+          await axios.post('https://buddy-chat.onrender.com/api/auth/verifylogin', usertoken)
             .then((res) => {
                 const { data } = res
                 setuser(data)
